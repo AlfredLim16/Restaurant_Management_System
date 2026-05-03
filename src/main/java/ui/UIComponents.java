@@ -97,6 +97,16 @@ public final class UIComponents {
         return button;
     }
     
+    public static JButton operatorButton(String symbol){
+        JButton operator = new JButton(symbol);
+        operator.setFocusPainted(false);
+        operator.setBackground(Color.WHITE);
+        operator.setFont(new Font(UIComponents.FONT, Font.PLAIN, 16));
+        operator.setBorder(BorderFactory.createLineBorder(UIComponents.COLOR_BORDER));
+        operator.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        return operator;
+    }
+    
     public static JButton addItemButton(String text) {
         JButton btn = new JButton(text);
         primaryButton(btn);
