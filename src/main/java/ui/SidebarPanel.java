@@ -138,7 +138,7 @@ public class SidebarPanel extends JPanel implements ActionListener, MouseListene
             // Report Feature
         }else if(e.getSource() == btnSettings){
             setActiveButton(btnSettings);
-            // Settings Feature
+            multiplePanel.showPanel(new SettingsPanel());
         }else if(e.getSource() == btnAbout){
             setActiveButton(btnAbout);
             multiplePanel.showPanel(new AboutPanel());
