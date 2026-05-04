@@ -129,7 +129,7 @@ public class SidebarPanel extends JPanel implements ActionListener, MouseListene
             // Payment Feature
         }else if(e.getSource() == btnInventory){
             setActiveButton(btnInventory);
-            // Inventory Feature
+            multiplePanel.showPanel(new InventoryPanel());
         }else if(e.getSource() == btnWaste){
             setActiveButton(btnWaste);
             multiplePanel.showPanel(new WastePanel(mainFrame));
